@@ -1,0 +1,39 @@
+.popup-form-order { z-index:150;position:absolute;top:auto;bottom:0; display: none; background: #f2f2f2; right: 0; width: 680px; max-width: 100%; max-height: 100%; padding: 40px 70px; color: var(--text-color); }
+.popup-form-order a { color: var(--text-color); text-decoration: underline; }
+.popup-form-order .close-form { position: absolute; left: 47%; top: 5px; font-size: 43px; color: var(--additional-color); }
+.popup-form-order .close-form:hover { cursor: pointer; transform: scale(1.2); }
+.popup-form-order .form-wrapper { }
+.popup-form-order .form-title { font-family: MuseoSansCyrl500; color: var(--additional-color); font-size: 30px; text-align: center; margin: 40px 0 50px; text-transform: uppercase; }
+.popup-form-order .subtitle { font-size: 14px; }
+.popup-form-order .active .subtitle { color: var(--additional-color); }
+.popup-form-order textarea { width: 100%; background: 0; border: 0; border-bottom: 1px solid var(--text-color); height: 30px; }
+.popup-form-order .active textarea { border-bottom: 1px solid var(--additional-color); }
+.popup-form-order label { display: block; margin-top: 15px; padding-top: 5px; }
+.popup-form-order label input {padding: 5px 0; width: 100%; border: 0; border-bottom: 1px solid var(--text-color); background: 0; box-shadow: none; }
+.popup-form-order .active input { border-bottom: 1px solid var(--additional-color); }
+.popup-form-order .info-message { position: relative; top: 20px; margin: 0;}
+.popup-form-order .info-message.error { color: #de0d0d }
+.popup-form-order input.error, .popup-form-order textarea.error { border-color: #f00 !important; }
+.popup-form-order input.active, .popup-form-order textarea.active, .popup-form-order input:focus { border-color: var(--additional-color) !important; }
+.popup-form-order .info-message.order { margin: 30px 0; }
+.popup-form-order .send-button { margin: 45px auto; width: 270px; max-width: 95%; background-color: var(--main-color); text-align: center; cursor: pointer; }
+.popup-form-order .send-button:hover { cursor: pointer; opacity: 0.8; }
+.popup-form-order .send-button input { padding: 15px; background: 0; border: 0; width: 100%; }
+.popup-form-order .send-button input:hover { cursor: pointer; }
+.popup-form-order .detail-info .image { float: left; margin-right: 20px; width: 90px; height: 90px; background-size: contain; background-repeat: no-repeat; background-position: center; }
+.popup-form-order .detail-info .text { line-height: 1.25; }
+.popup-form-order .detail-info .text p { margin-bottom: 0; }
+.popup-form-order .errortext { top: 28px; position: relative; }
+.popup-form-order [data-name=detail]{display: none;}
+
+@media screen and (max-width:768px) {
+    .popup-form-order { padding: 25px; }
+    .popup-form-order .close-form { left: 88%; top: -15px; }
+    .popup-form-order .form-title { margin: 10px 0; font-size: 26px; }
+    .popup-form-order { font-size: 0.9em; }
+    .popup-form-order label { margin-top: 5px; }
+    .popup-form-order .send-button { margin-top: 25px; margin-bottom: 5px; }
+    .popup-form-order .info-message { font-size: 12px; }
+    .popup-form-order .detail-info{margin-top:20px;padding:10px;font-size:0.85em;}
+    #user-politic-modal { padding: 15px; font-size: 0.9em; }
+}

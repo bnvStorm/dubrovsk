@@ -1,0 +1,1 @@
+<img width="90" alt="logo_LOS_47_f2f2f3.png" src="/upload/medialibrary/875/5hug3ios62rul7dxha6iwbo63zyv1evy.png" height="106" title="logo_LOS_47_f2f2f3.png">

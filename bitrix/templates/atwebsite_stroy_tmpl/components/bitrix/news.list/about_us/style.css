@@ -1,0 +1,44 @@
+.about-us {
+    padding: 60px 0;
+}
+
+.about-us .content-title {
+    padding: 15px 15px 0 60px;
+    line-height: 33px;
+    background: #fff;
+    margin-bottom: 0;
+}
+.about-us .left-side {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-us .content-wrapper {
+    margin-bottom: 75px;
+    padding: 60px;
+    background-color: #fff;
+    padding-top: 15px;
+
+}
+
+.about-us ul{
+    list-style: disc;
+    margin-left: 20px;
+}
+.about-us .content-button {
+    margin-top: 50px;
+    padding: 15px;
+    width: 310px;
+    max-width: 95%;
+    background-color: var(--main-color);
+    text-align: center;
+}
+
+.about-us .content-button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  .about-us {
+    margin: 0;
+  }
+}

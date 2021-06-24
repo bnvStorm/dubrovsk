@@ -1,0 +1,63 @@
+section.choose-room{
+    /*max-height: 90vh;*/
+}
+.about-us .container{
+    max-width: 100%;
+}
+.house{
+    display: flex;
+    flex-direction:column;
+}
+.house span{
+    max-width: 200px !important;
+    width: 100% !important;
+}
+.descr-text{
+    display: none;
+    color: #fff;
+}
+.slider-item:hover .descr-text{
+    display: block;
+}
+.slider-item:hover div.picture{
+    display: none !important;
+}.slider-item:hover .preview-text{
+    display: none;
+}
+ .smenu .menu-list{
+     display:none;
+ }
+ .scrolling .smenu .menu-list{
+     display: flex;
+ }
+.smenu .menu-list a{
+    padding: 10px;
+    color:#fff;
+}
+.choose-room .content-title{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.fon{
+    height: 45px;
+    background: url("/upload/Fon.gif");
+}
+.interactive-image{
+    max-width: 100%;
+}
+.our-difference .content-title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.contacts-and-map .content .wrapper{
+    padding-top: 0 !important;
+}
+.contacts-and-map .content .content-title{
+    padding-top: 20px;
+    background: #fff;
+    margin-bottom: 0;
+}
+.building .slider-list{
+    height: 500px;
+}

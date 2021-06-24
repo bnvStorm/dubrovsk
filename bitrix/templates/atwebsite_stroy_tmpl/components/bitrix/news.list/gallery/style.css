@@ -1,0 +1,23 @@
+.gallery{padding-bottom:50px;}
+.gallery .slider-list{height:615px;}
+.gallery .slider-list .slider-item{padding:15px;height:250px;}
+.gallery .slider-list .slider-item .slider-bg{height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;}
+.gallery .slider-list .slider-item:hover{cursor:pointer;}
+.gallery .slider-list .slick-next{right:0;}
+.gallery .slider-list .slick-prev{right:90px;}
+.gallery .slider-list .slider-item:active{}
+.gallery .slider-modal{display:none;z-index:250;position:fixed;height:100%;width:100%;left:0;top:0;background:rgba(0,0,0,0.7);}
+.gallery .slider-modal .wrapper{position:relative;left:0;height:100%;width:100%;display:flex;align-items:center;justify-content:center;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;-webkit-transition:all 0.5s ease;transition:all 0.5s ease;}
+.gallery .slider-modal .wrapper img{}
+.gallery .slider-modal button{z-index:300;position:absolute;top:48%;color:transparent;cursor:pointer;border:0;padding:10px;}
+.gallery .slider-modal button:hover{background-color:var(--main-color);}
+.gallery .slider-modal .slide-prev{left:0;background:url(images/arrow-prev.png) no-repeat center;background-color:var(--additional-color);}
+.gallery .slider-modal .slide-next{right:0;background:url(images/arrow-next.png) no-repeat center;background-color:var(--additional-color);}
+.gallery .slider-modal .close-window{z-index:300;position:absolute;top:25px;right:25px;background-color:#f0f0f0;border-radius:50%;border:1px solid #444;height:27px;width:27px;display:inline-block;cursor:pointer;}
+.gallery .slider-modal .close-window:before{content:"";display:block;height:18px;width:2px;background-color:#444;transform:rotate(-45deg);margin-top:4px;margin-left:12px;}
+.gallery .slider-modal .close-window:after{content:"";display:block;height:18px;width:2px;background-color:#444;transform:rotate(45deg);margin-top:-18px;margin-left:12px;}
+.gallery .slider-modal .close-window:hover{transform:scale(1.1);}
+
+@media screen and (max-width: 576px) {
+    .gallery .slider-list .slider-item {padding: 10px 0;}
+}

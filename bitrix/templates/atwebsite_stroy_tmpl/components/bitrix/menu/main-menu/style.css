@@ -1,0 +1,55 @@
+.main-menu {
+    overflow: auto;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 500px;
+    background: #f2f2f2;
+    z-index: 300;
+    color: var(--text-color);
+    max-width: 29%;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: MuseoSansCyrl500;
+}
+.main-menu a {
+    display: inline-block;
+    color: var(--text-color);
+    height: 100%;
+    width: 100%;
+    padding: 25px 25px 25px 70px;
+}
+.main-menu .active,
+.main-menu a:hover {
+    color: var(--additional-color);
+}
+.main-menu .active:before,
+.main-menu a:hover:before {
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    border: 2px solid var(--additional-color);
+    width: 20px;
+    margin-top: 0;
+    position: relative;
+    top: -4px;
+}
+.main-menu .menu-list {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.main-menu .menu-item {
+}
+.main-menu .close-menu {
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    font-size: 35px;
+    color: var(--additional-color);
+}
+.main-menu .close-menu:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}

@@ -1,0 +1,50 @@
+.documents {
+    padding-bottom: 70px;
+}
+
+.documents .doc-list {
+}
+
+.documents .doc-list .doc-item {
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    padding: 15px;
+}
+
+.documents .doc-list .doc-item:hover {
+    box-shadow: 0px 0px 2px #aaa;
+}
+
+.documents .doc-list .doc-item svg {
+    width: 40px;
+    margin-right: 15px;
+    display: block;
+    height: auto;
+    max-height: 26px;
+} 
+
+.documents .doc-list .doc-item svg path {
+    fill: var(--main-color);
+}
+
+.documents .doc-list .file-name {
+    display: block;
+    line-height: 1.35;
+}
+
+.documents .show-more {
+    margin-top: 25px;
+    color: var(--main-color);
+    text-decoration: underline;
+    display: block;
+    text-align: right;
+}
+
+.documents .doc-list .file-src {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}

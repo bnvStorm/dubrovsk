@@ -1,0 +1,23 @@
+footer .social-links a {
+    width: 60px;
+    display: inline-block;
+}
+footer .social-links a img {
+    width: 30px;
+}
+footer .social-links a:hover svg path {
+    fill: var(--main-color);
+}
+footer .link-btn a {
+    display: inline-block;
+    width: 300px;
+    padding: 25px 35px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 50px;
+    border: 1px solid var(--main-color);
+}
+footer .social-list .link-btn a:hover {
+    background: #fff;
+    color: var(--main-color);
+}

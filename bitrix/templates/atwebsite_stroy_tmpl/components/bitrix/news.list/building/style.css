@@ -1,0 +1,25 @@
+.building{padding-bottom:50px;}
+.building .slider-list{height:660px;}
+.building .slider-list .slider-item{padding:15px;height:250px;}
+.building .slider-list .slider-item .slider-bg{height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;}
+.building .slider-list .slider-item:hover{cursor:pointer;}
+.building .slider-list .slick-next{right:15px;}
+.building .slider-list .slick-prev{right:90px;}
+.building .slider-list .slider-item:active{}
+.building .slider-modal{display:none;z-index:250;position:fixed;height:100%;width:100%;left:0;top:0;background:rgba(0,0,0,0.7);}
+.building .slider-modal .wrapper{position:relative;left:0;height:100%;width:100%;display:flex;align-items:center;justify-content:center;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;-webkit-transition:all 0.5s ease;transition:all 0.5s ease;}
+.building .slider-modal .wrapper img{}
+.building .slider-modal button{z-index:300;position:absolute;top:48%;color:transparent;cursor:pointer;border:0;padding:10px;}
+.building .slider-modal button:hover{background-color:var(--main-color);}
+.building .slider-modal .slide-prev{left:0;background:url(images/arrow-prev.png) no-repeat center;background-color:var(--additional-color);}
+.building .slider-modal .slide-next{right:0;background:url(images/arrow-next.png) no-repeat center;background-color:var(--additional-color);}
+.building .slider-modal .close-window{z-index:300;position:absolute;top:25px;right:25px;background-color:#f0f0f0;border-radius:50%;border:1px solid #444;height:27px;width:27px;display:inline-block;cursor:pointer;}
+.building .slider-modal .close-window:before{content:"";display:block;height:18px;width:2px;background-color:#444;transform:rotate(-45deg);margin-top:4px;margin-left:12px;}
+.building .slider-modal .close-window:after{content:"";display:block;height:18px;width:2px;background-color:#444;transform:rotate(45deg);margin-top:-18px;margin-left:12px;}
+.building .slider-modal .close-window:hover{transform:scale(1.1);}
+.building .date-list{margin-bottom:25px;}
+.building .date-list span{border:1px solid #efefef;padding:5px 8px;display:inline-block;text-align:center;height:2.25em;}
+.building .date-list span.active,.building .date-list span:hover{cursor:pointer;background-color:var(--additional-color);}
+@media screen and (max-width:576px){
+    .building .slider-list .slider-item {padding: 10px 0;}
+}

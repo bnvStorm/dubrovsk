@@ -1,0 +1,50 @@
+.popup-form-call { z-index: 500; display: none; background: #f2f2f2; position: fixed; top: 0; right: 0; width: 680px; max-width: 100%; height: 100%; padding: 40px 70px; color: var(--text-color); }
+.popup-form-call a { color: var(--text-color); text-decoration: underline; }
+.popup-form-call .close-form { position: absolute; left: 47%; top: 5px; font-size: 43px; color: var(--additional-color); }
+.popup-form-call .close-form:hover { cursor: pointer; transform: scale(1.2); }
+.popup-form-call .form-wrapper { }
+.popup-form-call .form-title { font-family: MuseoSansCyrl500; color: var(--additional-color); font-size: 30px; text-align: center; margin: 40px 0 50px; text-transform: uppercase; }
+.popup-form-call .subtitle { font-size: 14px; }
+.popup-form-call .active .subtitle { color: var(--additional-color); }
+.popup-form-call textarea { width: 100%; background: 0; border: 0; border-bottom: 1px solid var(--text-color); height: 30px; }
+.popup-form-call .active textarea { border-bottom: 1px solid var(--additional-color); }
+.popup-form-call label { display: block; margin-top: 15px; padding-top: 5px; }
+.popup-form-call label input {padding: 5px 0; width: 100%; border: 0; border-bottom: 1px solid var(--text-color); background: 0; box-shadow: none;}
+.popup-form-call .active input { border-bottom: 1px solid var(--additional-color); }
+.popup-form-call .info-message { position: relative; top: 20px; margin: 0;}
+.popup-form-call .info-message.error { color: #de0d0d }
+.popup-form-call input.error, .popup-form-call textarea.error { border-color: #f00 !important; }
+.popup-form-call input.active, .popup-form-call textarea.active, .popup-form-call input:focus { border-color: var(--additional-color) !important; }
+.popup-form-call .info-message.order { margin: 30px 0; }
+.popup-form-call .send-button { margin: 45px auto; width: 270px; max-width: 95%; background-color: var(--main-color); text-align: center; cursor: pointer; }
+.popup-form-call .send-button:hover { cursor: pointer; opacity: 0.8; }
+.popup-form-call .send-button input { padding: 15px; background: 0; border: 0; width: 100%; }
+.popup-form-call .send-button input:hover { cursor: pointer; }
+.popup-form-call .detail-info { display: none; }
+.popup-form-call .detail-info .image { width: 90px; height: 90px; background-size: contain; background-repeat: no-repeat; background-position: center; }
+.popup-form-call .detail-info .text { line-height: 1.25; padding-left: 20px; }
+.popup-form-call .detail-info .text p { margin-bottom: 0; }
+.popup-form-call .errortext { top: 28px; position: relative; }
+
+@media screen and (max-height:840px) {
+    .popup-form-call .bg-image { display: none; }
+}
+
+@media screen and (max-height:665px) {
+    .popup-form-call .send-button { margin: 25px auto; }
+}
+
+@media screen and (max-height:650px) {
+    .popup-form-call { overflow-y: auto; }
+}
+
+@media screen and (max-width:768px) {
+    .popup-form-call { padding: 25px; }
+    .popup-form-call .close-form { left: 88%; top: -15px; }
+    .popup-form-call .form-title { margin: 10px 0; font-size: 26px; }
+    .popup-form-call { font-size: 0.9em; }
+    .popup-form-call label { margin-top: 5px; }
+    .popup-form-call .send-button { margin-top: 25px; margin-bottom: 5px; }
+    .popup-form-call .info-message { font-size: 12px; }
+    #user-politic-modal { padding: 15px; font-size: 0.9em; }
+} 

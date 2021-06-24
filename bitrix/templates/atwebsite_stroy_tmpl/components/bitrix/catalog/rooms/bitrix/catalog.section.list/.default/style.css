@@ -1,0 +1,299 @@
+.change-interval-value {
+    display: none;
+}
+.rooms-show-hide {
+    display: none;
+    position: absolute;
+    top: -30px;
+    white-space: nowrap;
+    background-position: right 25% !important;
+    padding-right: 25px;
+}
+.choose-room {
+    position: relative;
+}
+
+.choose-room .smart-filter {
+    margin-bottom: 50px;
+    position: relative;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+.choose-room .smart-filter .clear-filter {
+    z-index: 2 !important;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.choose-room .smart-filter .clear-filter:hover {
+    text-decoration: none;
+}
+.choose-room .smart-filter h4 {
+    font-size: 18px;
+    font-family: MuseoSansCyrl500;
+    margin: 15px 0;
+}
+.choose-room .smart-filter .interval .text-right {
+    text-align: right;
+    margin-left: -60px;
+}
+.choose-room .smart-filter .interval .text-left {
+    text-align: left;
+    margin-left: 0;
+}
+.choose-room .smart-filter .interval {
+    /*! border-top: 2px solid #efefef; */
+    margin-bottom: 25px;
+    width: 90%;
+    height: 4px;
+    border: none;
+    background: #ddd;
+        cursor: pointer;
+}
+.choose-room .smart-filter .interval .value-block {
+    /*! border-top: 2px solid var(--additional-color); */
+    position: relative;
+    /*! width: 75%; */
+    /*! margin: auto; */
+    /*! margin-top: -1px; */
+}
+.ui-widget-header {
+    background: var(--additional-color);
+}
+.choose-room .smart-filter .value-block span {
+    position: absolute;
+    margin-top: 10px;
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+    margin-left: -31px;
+    z-index: 1;
+}
+
+.choose-room .smart-filter .interval .min-value {
+    left: 0%;
+}
+.choose-room .smart-filter .interval .max-value {
+    left: 100%;
+}
+.choose-room .smart-filter .interval .marker {
+    display: inline-block;
+    background: var(--additional-color) !important;
+    border-radius: 50%;
+    height: 10px !important;
+    width: 10px !important;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    display: inline-block;
+    background: var(--additional-color) !important;
+    border-radius: 50%;
+    height: 15px !important;
+    width: 15px !important;
+    top: -3px !important;
+    margin-left: 0 !important;
+    border: none !important;
+}
+.choose-room .smart-filter h4:contains("hidden") {
+    height: 0;
+}
+
+a[id^="house_"] {
+    max-width: 100%;
+    white-space: nowrap;
+}
+.choose-room .smart-filter .params span {
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    display: inline-block;
+    width: auto;
+    max-width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.choose-room .smart-filter .params span.active {
+    background-color: var(--additional-color);
+}
+
+.choose-room .smart-filter div:nth-child(4) .params {
+    float: left;
+}
+
+.choose-room .smart-filter div:nth-child(4) input[type=checkbox] {
+    margin-left: 50px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.choose-room .smart-filter div:nth-child(4) > span {
+    vertical-align: middle;
+}
+
+.choose-room .rooms-selector {
+    height: 840px;
+	display: flex;
+    border: 1px solid #efefef;
+    border-left: 0;
+}
+.choose-room .rooms-selector .rooms-list:hover {
+    overflow: auto;
+}
+.choose-room .rooms-list .bx_sitemap_ul {
+    padding-left: 6px;
+}
+
+.choose-room .rooms-selector .rooms-list {
+    width: 300px;
+    overflow: hidden;
+}
+
+.choose-room .rooms-selector .rooms-list li {
+    text-transform: uppercase;
+    border: 1px solid #efefef;
+    font-size: 20px;
+    font-family: MuseoSansCyrl500;
+}
+.choose-room .rooms-selector .rooms-list li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 35px 25px;
+}
+.choose-room .rooms-selector .rooms-list li.active, .choose-room .rooms-selector .rooms-list li:hover {
+    cursor: pointer;
+    border-left: 7px solid var(--additional-color);
+    background-color: #f0f0f0;
+    margin-left: -6px;
+}
+
+.choose-room .rooms-selector .rooms-detail {
+    margin-left: 0;
+}
+
+.choose-room .rooms-selector .rooms-detail .left-side {
+    padding: 50px 0px 50px 50px;
+}
+
+.choose-room .rooms-selector .rooms-detail .right-side {
+    padding: 50px;
+}
+
+.choose-room .short-info {
+    margin: 0;
+}
+.choose-room .short-info .info-item {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.choose-room .rooms-detail .short-info .info-item {
+    color: var(--additional-color) !important;
+}
+.choose-room .short-info .info-item span {
+    font-size: 50px;
+    font-family: MuseoSansCyrl500;
+}
+
+.choose-room .short-info .info-item p {
+}
+
+.choose-room .right-side .room-status {
+    text-align: center;
+    background-color: #ccc;
+    padding: 15px;
+    width: 260px;
+    max-width: 100%;
+    font-family: MuseoSansCyrl500;
+    font-size: 14px;
+    margin: 0 auto 25px;
+}
+.choose-room .right-side .room-status.free {
+    background: var(--main-color);
+}
+.choose-room .right-side .room-status.free:hover {
+    cursor:pointer;
+    opacity: 0.8;
+}
+.choose-room .right-side .room-status.sell {
+
+}
+.choose-room .right-side .more-pictures {
+    text-align: center;
+    margin: 45px auto 75px;
+}
+
+.choose-room .right-side .more-pictures img {
+    margin: 15px auto;
+	max-width: 112px;
+}
+
+.choose-room .rooms-detail .properties {
+    width: 260px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.choose-room .rooms-detail .properties li {
+    font-size: 14px;
+}
+
+.choose-room .rooms-detail .properties .prop-title {
+    width: 100px;
+    display: inline-block;
+    font-family: MuseoSansCyrl500;
+}
+
+.choose-room .rooms-detail .properties .prop-value {
+}
+
+.choose-room .rooms-detail .properties li span {
+}
+
+.ui-slider .ui-slider-range {
+    background: var(--additional-color);
+}
+
+.choose-room .rooms-detail .cm-statuses {
+	padding: 0 15px;
+    position: relative;
+    top: -20px;
+}
+    .choose-room .rooms-detail .cm-statuses select {
+        width: 60%;
+    }
+    .choose-room .rooms-detail .cm-statuses > span {
+        background: var(--main-color);
+        color: var(--text-color);
+        font-weight: 600;
+        padding: 5px 10px;
+    }
+    .choose-room .rooms-detail .cm-statuses > span:hover {
+        cursor: pointer;
+        opacity: .8;
+    }
+    
+@media screen and (max-width:1136px) {
+    .choose-room .rooms-detail .cm-statuses {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:1010px) {
+    .choose-room .rooms-detail .cm-statuses select {
+        margin-bottom: 7px;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .choose-room .smart-filter .interval {
+        margin: auto;
+        width:90%;
+    }
+}
