@@ -81,8 +81,8 @@ header.scrolling {
     top: 0;
     left: 0;
     width: 100%;
-    height: 58px;
-    background: #5ec2af;
+    height: 70px;
+    background: linear-gradient(to top right, #211c50, #5ec2af);
     z-index: 250;
     color: var(--text-color);
     box-shadow: 0 0 5px #ddd;
@@ -111,6 +111,15 @@ header.inner-page {
     color: #000;
 }
 
+@media (min-width:1401px) {
+    .main-slider .slider-item .item-title h1 {
+        font-size: 85px;
+    }
+    .main-slider{
+        margin-top: -136px;
+    }
+
+}
 header a {
     color: #fff;
 }
@@ -157,6 +166,7 @@ header.inner-page a {
     padding: 15px;
     margin-right: auto;
     margin-left: 25px;
+    max-width: 475px;
 }
 
 .header__top-line .header-text .show-on-map:hover {
@@ -202,7 +212,7 @@ main {
 }
 /*main slider*/
 .main-slider {
-    margin-top: -136px;
+
     height: 800px;
     height: 100vh;
 /*     overflow: hidden; */
@@ -249,9 +259,7 @@ main {
     font-family: LemonMilkRUS;
 }
 
-.main-slider .slider-item .item-title h1 {
-    font-size: 110px;
-}
+
 
 .main-slider .slider-item .item-text {
     padding: 20px 0 35px;
@@ -923,6 +931,45 @@ footer {
     .header__top-line .header-button {
         padding: 3px;
         margin: 0;
+    }
+}
+@media (max-width: 1400px) {
+    .main-slider .slider-item .item-title h1 {
+        font-size: 70px;
+    }
+    .main-slider {
+        margin-top: -205px;
+    }
+    .about-us .left-side{
+    background-position-x: center;
+}
+}
+@media (max-width: 1024px) {
+    .main-slider .slider-item .item-title h1 {
+        font-size: 35px;
+    }
+}
+@media (max-width: 480px) {
+    .main-slider {
+        margin-top: -20px;
+    }
+    .contacts-and-map .content .button-wrapper{
+        padding-bottom: 20px;
+    }
+    .smenu{
+        display: none;
+    }
+    .our-difference .slider-list{
+        height: auto;
+    }
+    .gallery .slider-list, .building .slider-list{
+        padding-bottom: 0;
+    }
+    .building .date-list span{
+        font-size: 14px;
+    }
+    header{
+        background: linear-gradient(to top right, #211c50, #5ec2af);
     }
 }
 @media all and (min-width: 800px) {

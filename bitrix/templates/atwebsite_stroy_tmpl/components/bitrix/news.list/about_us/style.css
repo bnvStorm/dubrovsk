@@ -37,6 +37,11 @@
     cursor: pointer;
     opacity: 0.8;
 }
+@media screen and (max-width: 1400px) {
+    .main-slider .slider-item .item-title h1 {
+        font-size: 70px;
+    }
+}
 @media screen and (max-width: 768px) {
   .about-us {
     margin: 0;
