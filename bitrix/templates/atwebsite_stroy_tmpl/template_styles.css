@@ -88,7 +88,7 @@ header.scrolling {
     box-shadow: 0 0 5px #ddd;
 }
 header.scrolling a {
-    color: var(--text-color);
+    color: #ffffff;
 }
 header.scrolling .header__top-line .header-logo {
     width: 48px;
@@ -105,7 +105,7 @@ header.scrolling .header-menu {
     top: 14px;
 }
 header.scrolling .header-menu svg line {
-    stroke: var(--text-color);
+    stroke: #ffffff;
 }
 header.inner-page {
     color: #000;
@@ -236,7 +236,7 @@ main {
 }
 .main-slider .slider-item:after {
     content: "";
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -479,13 +479,7 @@ footer {
     .about-us .content-wrapper {
         padding-top: 15px;
     }
-    .about-us .content-title {
-        padding: 0 15px 0 30px;
-    }
-    .about-us .content-wrapper {
-        margin: 35px 0;
-        padding: 35px;
-    }
+
     .about-us .left-side {
         background-size: cover !important;
         overflow: hidden;
@@ -655,7 +649,7 @@ footer {
     }
     .about-dev .content .content-block {
         width: 100%;
-        opacity: 0.8;
+        opacity: 0.9;
         margin: 15px 0;
         padding: 15px;
     }
@@ -756,8 +750,8 @@ footer {
     }
     section .content-title {
         margin: 0;
-        padding: 35px 0 25px !important;
-        font-size: 1.7em;
+        padding: 10px !important;
+        font-size: 14px;
     }
     .choose-room .smart-filter {
         margin-top: -15px;

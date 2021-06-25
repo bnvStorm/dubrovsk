@@ -29,7 +29,7 @@ $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayB
             </div>
             <?if ($arItem['PROPERTIES']['BUTTON_LINK']['VALUE']):?>
             <div class="content-button">
-                <a href="#anc_building" target=_blank download><?=$arItem["PROPERTIES"]["BUTTON_TITLE"]["VALUE"]?></a>
+                <a href="#anc_building"><?=$arItem["PROPERTIES"]["BUTTON_TITLE"]["VALUE"]?></a>
             </div>
 <?endif;?>
         </div>
