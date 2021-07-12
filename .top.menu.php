@@ -1,7 +1,7 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"о комплексе", 
+		"О Дубровке", 
 		"#anc_about", 
 		Array(), 
 		Array(), 

@@ -35,6 +35,7 @@ const INC_FILE_PATH = SITE_TEMPLATE_PATH.'/include';
             TEMPLATE_PATH: "<?=SITE_TEMPLATE_PATH?>"
         });
     </script>
+    <meta property = "og:image" content = "<?=SITE_TEMPLATE_PATH?>/images/favicon.ico">
 </head>
 <body>
     <?$APPLICATION->ShowPanel();?>

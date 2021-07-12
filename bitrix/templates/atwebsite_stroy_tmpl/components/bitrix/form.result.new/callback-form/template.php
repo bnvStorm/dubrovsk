@@ -37,6 +37,7 @@ foreach ($arResult["QUESTIONS"] as $FIELD_SID => $arQuestion) {
 	}
 }
 ?>
+    <p>Почта отдела продаж: <a href="mailto:lenoblstroy47@yandex.ru">lenoblstroy47@yandex.ru</a></p>
 <p class="politic-message"><?=GetMessage('SUBMIT_MESS_TEXT')?><a href="javascript:void(0);" data-fancybox data-src="#user-politic-modal"><?=GetMessage('SUBMIT_MESS_LINK')?></a></p>
 <?
 if($arResult["isUseCaptcha"] == "Y") {

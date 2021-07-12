@@ -55,6 +55,7 @@ if($arResult["isUseCaptcha"] == "Y") {
 <div class="send-button">
 	<input <?=(intval($arResult["F_RIGHT"]) < 10 ? "disabled=\"disabled\"" : "");?> type="submit" name="web_form_submit" value="<?=htmlspecialcharsbx(strlen(trim($arResult["arForm"]["BUTTON"])) <= 0 ? GetMessage("FORM_ADD") : $arResult["arForm"]["BUTTON"]);?>" />
 </div>
+    <p>Почта отдела продаж: <a href="mailto:lenoblstroy47@yandex.ru">lenoblstroy47@yandex.ru</a></p>
 <p class="politic-message"><?=GetMessage('SUBMIT_MESS_TEXT')?><a href="javascript:void(0);" data-fancybox data-src="#user-politic-modal"><?=GetMessage('SUBMIT_MESS_LINK')?></a></p>
 <?=$arResult["FORM_FOOTER"]?>
     

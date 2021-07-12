@@ -965,6 +965,11 @@ footer {
     header{
         background: linear-gradient(to top right, #211c50, #5ec2af);
     }
+   .about-dev .content .content-block {
+
+        opacity: 1;
+
+    }
 }
 @media all and (min-width: 800px) {
   .fancybox-thumbs {
@@ -994,4 +999,10 @@ footer {
     height: 50px;
     margin: 20px 0;
     background: linear-gradient(to top right, #211c50, #5ec2af);
+}
+
+@media(min-width:500px){
+	.tel{
+		font-size: 20px;
+	}
 }

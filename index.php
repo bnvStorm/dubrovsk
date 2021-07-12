@@ -40,6 +40,39 @@ $APPLICATION->SetTitle("ООО «ЛенОблСтрой 47»");
             );?>
         </div>
     </div>
+    <div class="slider-item">
+        <div class="item-wrapper container">
+            <div class="item-title">
+                <h1>
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:main.include", "",
+                        Array("AREA_FILE_SHOW" => "file", "PATH" => INC_FILE_PATH."/inc_main-slider_title.php")
+                    );?>
+                </h1>
+            </div>
+            <hr>
+            <div class="item-text">
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:main.include", "",
+                    Array("AREA_FILE_SHOW" => "file", "PATH" => INC_FILE_PATH."/inc_main-slider_text.php")
+                );?>
+            </div>
+            <div class="item-button">
+                <a class="order-link" href="#anc_choose">
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:main.include", "",
+                        Array("AREA_FILE_SHOW" => "file", "PATH" => INC_FILE_PATH."/inc_main-slider_btn.php")
+                    );?>
+                </a>
+            </div>
+        </div>
+        <div class="bg-image">
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:main.include", "",
+                Array("AREA_FILE_SHOW" => "file", "PATH" => INC_FILE_PATH."/inc_main-slider_bg-image.php")
+            );?>
+        </div>
+    </div>
 </section>
 <?// CHOOSE ROOM?>
     <a name="anc_choose"></a>

@@ -1,0 +1,668 @@
+/* MAIN STYLES */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+.visual {
+	position: relative;
+}
+.interactive-image {
+    max-width: 99.7%;
+    position: relative;
+    color: #444;
+}
+#ajax_detail_modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1200;
+    width: 100%;
+    height: 100%;
+}
+.visual .back-side {
+    display: none;
+    background: rgba(0,0,0,0.8);
+    width: 30%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    height: 100%;
+    z-index: 1100;
+}
+.visual .back-side .close-page {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: #fff;
+    font-size: 50px;
+    line-height: 1em;
+}
+.visual .back-side .close-page:hover {
+    transform: scale(1.2);
+}
+.interactive-image .hover-title {
+    z-index: 999;
+    position: fixed;
+    display: none;
+    top:0px;
+    left:0px;
+    max-width: 250px;
+    background-color: #fff;
+    padding: 5px 10px 5px 10px;
+    color: #000;
+    border: 1px solid #888;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 3px 3px 3px #555;
+}
+.interactive-image a {
+    text-decoration: none;
+    color: #323232;
+}
+.interactive-image .info-message {
+    display: none;
+    text-align: center;
+    font-size: 16px;
+}
+.interactive-image .info-message.error {
+    display: block;
+    color: red;
+}
+.interactive-image .info-message.info {
+    display: block;
+    color: #009688;
+}
+
+/* INFO-CONTAINER */
+.interactive-image .info-container {
+    position: relative;
+    padding: 25px 0;
+}
+.interactive-image .info-container h3 {
+    margin: 0;
+    padding-right: 70px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #444;
+}
+.interactive-image .marker-actions {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+.interactive-image .info-message-block {
+    position: absolute;
+    display: none;
+    right: 15px;
+    width: auto;
+    max-width: 350px;
+    min-width: 150px;
+    height: auto;
+    background: #fff;
+    z-index: 150;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 5px #ddd;
+    border-radius: 5px;
+}
+.interactive-image .marker-actions .step-back {
+    width: 20px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.interactive-image .marker-actions .marker-clear {
+    width: 17px;
+    display: inline-block;
+}
+.interactive-image .marker-actions .info-button {
+    display: inline-block;
+    widows: 30px;
+}
+.interactive-image .marker-actions .step-back:hover,
+.interactive-image .marker-actions .marker-clear:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.interactive-image .marker-actions img {
+    max-width: 100%;
+}
+
+/* AREA LIST */
+.interactive-image .area-list {
+    position: relative;
+    padding-bottom: 65px;
+}
+.interactive-image .area-list ul {
+    list-style: none;
+    padding: 0;
+}
+.interactive-image .area-list li {
+    position: relative;
+    padding: 10px 15px 6px;
+    margin: 1px;
+    border: 1px solid #ccc;
+}
+.interactive-image .area-list li.active,
+.interactive-image .area-list li:hover {
+    cursor: default;
+    background: #e8f2f5;
+}
+.interactive-image .area-list .list-item {
+    cursor: pointer;
+}
+.interactive-image .area-list li .menu-icon {
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.interactive-image .area-list li .menu-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.interactive-image .area-list li .delete-icon {
+    position: relative;
+    display: inline-block;
+    width: 13px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.interactive-image .area-list li img {
+    max-width: 100%;
+}
+.interactive-image .area-list li .delete-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* AREA EDIT FORM */
+.interactive-image .edit_area_form {
+    z-index: 150;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    background: #f7fafd;
+    box-shadow: 1px 1px 5px #888;
+    padding: 10px;
+}
+.interactive-image .edit_area_form label > span {
+    width: 180px;
+    display: inline-block;
+}
+.interactive-image .edit_area_form .area-name,
+.interactive-image .edit_area_form .area-title,
+.interactive-image .edit_area_form .area-color {
+    margin: 7px 5px;
+}
+.interactive-image .edit_area_form .area-name input,
+.interactive-image .edit_area_form .area-title textarea,
+.interactive-image .edit_area_form .area-color input {
+    padding: 5px 10px;
+    width: 250px;
+    border: 2px inset #ccc;
+    vertical-align: top;
+}
+.interactive-image .edit_area_form .submit-btn input {
+    position: relative;
+    text-align: center;
+    width: 130px;
+    line-height: 1.2em;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.interactive-image .edit_area_form .area-color input {
+    width: 150px;
+}
+.interactive-image .edit_area_form .submit-btn input:hover {
+    cursor: pointer;
+    background: #fff;
+    color: var(--main-color);
+}
+#bx_colorpicker_color_bg_picker {
+    height: 100px;
+}
+
+/* ADD NEW MAP FORM */
+.interactive-image .add_new_map_form {
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+}
+.interactive-image .add_new_map_form fieldset {
+    border-color: var(--main-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #eeffff, transparent);
+}
+.interactive-image .add_new_map_form fieldset legend {
+    text-align: center;
+    font-size: 16px;
+    color: var(--main-color);
+}
+.interactive-image .add_new_map_form fieldset label > span {
+    width: 165px;
+    display: inline-block;
+    padding: 5px 10px 5px 0;
+}
+.interactive-image .add_new_map_form .section-btn input {
+    width: 300px;
+    border: 1px solid var(--main-color);
+    padding: 5px;
+}
+.interactive-image .add_new_map_form .submit-btn {
+    text-align: center;
+}
+.interactive-image .add_new_map_form .submit-btn input {
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    color: #fff;
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.interactive-image .add_new_map_form .submit-btn input:hover {
+    background: #fff;
+    color: var(--main-color);
+}
+
+/* CHANGE SECTION FORM */
+.interactive-image .change_section_form {
+    margin-bottom: 25px;
+}
+.interactive-image .change_section_form fieldset {
+    position: relative;
+    border-color: var(--main-color);
+    border-style: dotted;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 1px var(--main-color);
+    background: linear-gradient(to bottom, #eeffff, transparent);
+}
+.interactive-image .change_section_form fieldset legend {
+    font-size: 16px;
+    color: var(--main-color);
+}
+.interactive-image .change_section_form .image-btn input {width: 0px;}
+.interactive-image .change_section_form .image-btn,
+.interactive-image .change_section_form label input[type=button] {
+    position: relative;
+    text-align: center;
+    width: 130px;
+    line-height: 1.2em;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.interactive-image .change_section_form .add-section-btn input {padding: 0;}
+.interactive-image .change_section_form .delete-section-btn input {padding: 0;}
+.interactive-image .change_section_form .image-btn:hover,
+.interactive-image .change_section_form label:hover input[type=button] {
+    cursor: pointer;
+    background: #fff;
+    color: var(--main-color);
+}
+.interactive-image .change_section_form .image-btn input {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.interactive-image .change_section_form .sections-container {
+    cursor: default;
+    z-index: 10;
+    position: absolute;
+    top: 8px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid var(--main-color);
+    margin: 0 10px;
+    height: 27px;
+    overflow: hidden;
+    width: 150px;
+}
+.interactive-image .sections-container.opened {
+    overflow: auto;
+}
+.interactive-image .sections-container ul {
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+}
+/* .interactive-image .sections-container.opened ul {
+    padding-left: 20px;
+} */
+.interactive-image .sections-container .sections-list {
+    padding-left: 20px;
+}
+.interactive-image .sections-container > p {
+    margin: 0;
+}
+.interactive-image .sections-container.opened {
+    width: 250px;
+    height: 300px;
+}
+.interactive-image .form-actions li {
+    margin: 0;
+    padding: 0;
+    line-height: 2em;
+}
+.interactive-image .form-actions li[data-id] .list-item:hover {
+    color: var(--main-color);
+}
+.interactive-image .form-actions .sections-list .list-item {
+    display: inline-block;
+    width: 100%;
+}
+.interactive-image .form-actions .sections-list .list-item:first-child i {
+    padding-left: 5px;
+}
+
+/* ACTION MENU */
+.interactive-image .action-menu {
+    list-style: none;
+    margin: 15px auto 0px;
+    padding: 0;
+}
+.interactive-image .action-menu .menu-item {
+    cursor: pointer;
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 25px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+    background: rgba(33, 150, 243, 0.6);
+    color: #fff;
+}
+.interactive-image .action-menu .menu-item.active {
+    border: 3px outset var(--main-color);
+    background: var(--main-color);
+    color: #fff;
+}
+.interactive-image .action-menu .menu-item:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+.interactive-image .action-menu .menu-item.hidden {display: none;}
+
+.interactive-image .marker {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: -4px;
+    margin-left: -4px;
+    background: #f00;
+    height: 8px;
+    width: 8px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.interactive-image .marker.start {
+    height: 10px;
+    width: 10px;
+    background: #000;
+}
+
+.interactive-image .image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.interactive-image .image-container img {
+    width: 100%;
+}
+.interactive-image .image-container svg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.interactive-image polygon {
+    fill: #b3a540;
+    opacity: 0.4;
+}
+.interactive-image polygon:hover {
+    cursor: pointer;
+}
+.interactive-image .nav-chain {
+    list-style: none;
+    margin: 15px auto;
+    padding: 0;
+}
+.interactive-image .nav-chain li {
+    display: inline-block;
+    padding: 5px 8px;
+    margin: 0;
+    margin: 2px;
+}
+.interactive-image .nav-chain li a {
+    font-weight: bold;
+    color: #06a4a1;
+}
+
+/* COLOR SELECTOR */
+.interactive-image .area-color label > span {
+    margin-right: -5px;
+}
+.interactive-image .color-selector {
+    display: none;
+}
+.interactive-image .area-color .color-picture {
+    cursor: pointer;
+    margin-top: -2px;
+    height: 30px;
+    vertical-align: middle;
+    width: 30px !important;
+    opacity: 0.5;
+    border: 2px inset #444;
+}
+.interactive-image .area-color .color-picture:hover {
+    opacity: 1;
+}
+/* ACTION PREVIEW IMAGE */
+.interactive-image[data-action=previewImage] {
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    text-align: center;
+}
+.interactive-image[data-action=previewImage] .close-window {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+    background: #fff;
+    box-shadow: 1px 1px 1px #ccc;
+}
+.interactive-image[data-action=previewImage] .close-window:hover {line-height: 22px; font-weight: bold; border-width: 2px;}
+.interactive-image[data-action=previewImage] .change_section_form {display: none;}
+.interactive-image[data-action=previewImage] .info-container {display: none;}
+.interactive-image[data-action=previewImage] .image-container {height: 100%; width: auto;}
+.interactive-image[data-action=previewImage] .image-container img {height: 100%; width: auto;}
+
+/*CONTENT VISUAL*/
+.interactive-image .area-data {
+    display: none;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    margin: 0;
+    padding: 15px 25px;
+    width: 370px;
+    max-width: 100%;
+    box-shadow: 1px 1px 3px #555;
+}
+.interactive-image .area-data .content-text-compute {
+    display: none;
+    border-top: 2px solid #666;
+    padding: 15px 0;
+}
+
+.interactive-image .area-data .content-text-compute .rooms {
+    display: none;
+    margin: 0 18px;
+    list-style-type: disc;
+}
+.interactive-image .area-data .content-text-compute .rooms > span {
+    font-weight: bold;
+}
+.interactive-image .area-data .content-button a {
+    background-color: #fff;
+    padding: 15px;
+    display: inline-block;
+    margin: 15px 8px;
+    text-align: center;
+    font-family: MuseoSansCyrl500;
+    color: #555;
+}
+.interactive-image .area-data .content-button .buttons-block-1 a { width: auto;}
+.interactive-image .area-data .content-button .buttons-block-2 a { width: 95%;}
+
+
+.interactive-image .area-data .content-button a:hover {
+    background-color: #eee;
+}
+
+.interactive-image .area-data:after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    border-top: 10px solid transparent;
+    border-right: 0px solid var(--main-color);
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid var(--main-color);
+}
+.interactive-image .area-data.flip-horizontal:after {
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    right: 0;
+    left: -20px;
+}
+.interactive-image .area-data.arrow-hide {
+    top: 20px !important;
+    max-width: 90%;
+}
+.interactive-image .area-data.arrow-hide:after {
+    display: none;
+}
+.interactive-image .area-data .close-window {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 1;
+    color: #333;
+    font-size: 30px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.interactive-image .area-data .close-window:hover {
+    font-weight: bold;
+    transform: scale(1.1);
+}
+.choose-room .rooms-selector {
+    position: relative;
+}
+.choose-room .rooms-selector .alert-message {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    color: var(--main-color);
+    font-size: 1.75em;
+}
+.blinked-text {
+  -webkit-animation: blinked 0.5s ease infinite;
+  animation: blinked 0.5s ease infinite;
+}
+@-webkit-keyframes blinked {
+  0% { opacity: 1; }
+  25% { opacity: 0.35; }
+  50% { opacity: 0.5; }
+  75% { opacity: 0.75; }
+  100% { opacity: 1; }
+}
+@keyframes blinked {
+  0% { opacity: 1; }
+  25% { opacity: 0.35; }
+  50% { opacity: 0.5; }
+  75% { opacity: 0.75; }
+  100% { opacity: 1; }
+}
+.visual .content-title {
+    margin-bottom: 105px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    padding-top: 50px;
+    padding-left: 50px;
+    color: #a1c9df;
+    text-transform: initial;
+    line-height: 1.35;
+    font-size: 2.65em;
+    width: 100%;
+}
+.visual .content-title .hand-icon {
+    height: 31px;
+    width: 35px;
+    display: inline-block;
+    margin-right: 15px;
+    background: url(images/hand-icon.png) no-repeat center;
+}
+
+@media screen and (max-width: 992px) {
+	.visual .content-title {
+		font-size: 1.5em;
+		padding-top: 25px;
+		padding-left: 25px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.visual .content-title {
+		display: none;
+	}
+}
+@media screen and (max-width: 576px) {
+    main {overflow-x: hidden;}
+}
