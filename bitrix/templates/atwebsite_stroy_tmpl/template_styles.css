@@ -88,7 +88,7 @@ header.scrolling {
     box-shadow: 0 0 5px #ddd;
 }
 header.scrolling a {
-    color: #ffffff;
+    /*color: #ffffff;*/
 }
 header.scrolling .header__top-line .header-logo {
     width: 48px;
@@ -1005,4 +1005,7 @@ footer {
 	.tel{
 		font-size: 20px;
 	}
+}
+.main-menu a{
+    color:#000;
 }
